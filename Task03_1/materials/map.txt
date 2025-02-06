@@ -1,0 +1,9 @@
+typical repository structure
+
+|
+|- code-samples - some examples of code 
+|- materials - folder for useful materials 
+|- misc - some files for README
+|- src - your main directory for work
+|-- README.md - your task
+
