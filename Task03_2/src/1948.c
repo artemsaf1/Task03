@@ -19,13 +19,10 @@ int largest_prime_divisor(int a) {
                 break;
             }
         }
-        
         if (is_prime) max_prime = i;
     }
-    
     return max_prime;
 }
-    
 int main() {
     int a;
     char newline;
@@ -36,12 +33,10 @@ int main() {
     }
 
     int result = largest_prime_divisor(a);
-    
     if (result == -1) {
         printf("n/a");
     } else {
         printf("%d", result);
     }
-    
     return 0;
 }
