@@ -11,11 +11,11 @@ int main(int argc, char* argv[]) {
         flag = -1;
     } else {
     if (argv[1][0] == '0')
-        code();
+        flag = code();
     }
 
     if (argv[1][0] == '1') {
-        decode();
+        flag = decode();
     }
     return flag;
 }
@@ -30,6 +30,7 @@ int code(void) {
         if (g != ' ' && g != '\n') {
             printf("n/a");
             flag = -1;
+            break;
         } else {
             printf("%X%c", (int)c1, g);
         }
@@ -39,9 +40,10 @@ int code(void) {
 int decode(void) {
     int flag = 0;
     int c1;
-    char c2;
+    char c2 = '\0';
 
-    while (scanf("%2X%c", &c1, &c2) == 2) {
+    while (c2 != '\n') {
+        scanf("%2X%c", &c1, &c2);
         if (c2 != ' ' && c2 != '\n') {
             printf("n/a\n");
             return -1;

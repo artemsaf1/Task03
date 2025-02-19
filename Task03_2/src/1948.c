@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 int largest_prime_divisor(int a) {
-    if (a < 2) return -1;
-
     int max_prime = 1;
+    if (a < 0) {
+        a = -a;
+    }
 
     for (int i = 2; i<= a; i++) {
         int temp = a, is_prime = 1;
