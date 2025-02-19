@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int incide(double x, double y) {
-    return (x * x + y * y) < 1.0;
+    return (x * x + y * y) < 25;
 }
 
 int main() {
