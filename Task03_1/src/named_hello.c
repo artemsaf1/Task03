@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main() {
-    const char* name = "Rul";
-    printf("Hello,%s\n", name);
+    int name;
+    scanf("%d", &name);
+    printf("Hello, %d\n", name);
     return 0;
 }
