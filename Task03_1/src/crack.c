@@ -7,8 +7,7 @@ int incide(double x, double y) {
 int main() {
     double x, y;
     char newline;
-    
-    if(scanf("%lf %lf%c",&x, &y, &newline) != 3 || newline != '\n') {
+    if (scanf("%lf %lf%c", &x, &y, &newline) != 3 || newline != '\n') {
         printf("n/a");
         return 1;
     }

@@ -3,7 +3,7 @@
 int main() {
     int a, b;
     char newline;
-    if (scanf("%d %d%c",&a, &b, &newline) != 3 || newline != '\n') {
+    if (scanf("%d %d%c", &a, &b, &newline) != 3 || newline != '\n') {
         printf("n/a");
         return 1;
     }
@@ -12,6 +12,5 @@ int main() {
     } else {
         printf("%d %d %d n/a", a + b, a - b, a * b);
     }
-    
     return 0;
 }
